@@ -20,10 +20,20 @@ externalproject_add(ext_rayint
     INSTALL_COMMAND ""
 )
 
+#externalproject_add(ext_eigen
+#    PREFIX          ext_eigen
+#    URL             https://bitbucket.org/eigen/eigen/get/3.3.2.tar.gz
+#    URL_MD5         36b5731ab7d7e0c10843ac93bd9fd270
+#    SOURCE_DIR      ${CMAKE_SOURCE_DIR}/elibs/eigen
+#    CONFIGURE_COMMAND ""
+#    BUILD_COMMAND   ""
+#    INSTALL_COMMAND ""
+#)
+
 externalproject_add(ext_eigen
     PREFIX          ext_eigen
-    URL             https://bitbucket.org/eigen/eigen/get/3.3.2.tar.gz
-    URL_MD5         36b5731ab7d7e0c10843ac93bd9fd270
+    GIT_REPOSITORY  https://gitlab.com/libeigen/eigen.git
+    GIT_TAG         3.3.7
     SOURCE_DIR      ${CMAKE_SOURCE_DIR}/elibs/eigen
     CONFIGURE_COMMAND ""
     BUILD_COMMAND   ""
