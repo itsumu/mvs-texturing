@@ -3,3 +3,6 @@ elibs/
 projects/
 !elibs/CMakeLists/*
 !elibs/CMakeLists.txt
+.idea/
+.vscode/
+cmake-build-debug/
